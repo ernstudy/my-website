@@ -48,6 +48,8 @@ section p {
     color: var(--text-color-alt);
 }
 
+/* ----------------HEADER--------------- */
+
 #header {
     padding: 20px 60px 20px;
 }
