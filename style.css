@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --text-color-alt: #ccc;
+
+    --big-font: 3.5rem;
+    --h2-font: 2.5rem;
+    --h4-font: 1.5rem;
+    --p-font: 18px;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+}
+
+section {
+    min-height: 80vh;
+    padding: 10vh 8% 10vh;
+}
+
+section h4{
+    font-size: var(--h4-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: var(--h2-font);
+    font-weight: 600;
+}
+
+section p {
+    font-size: var(--p-font);
+    color: var(--text-color-alt);
+}
+
+#header {
+    padding: 20px 60px 20px;
+}
+
+
+#header .container {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+#header .container a {
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#header .container .nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+#header .container .nav ul li {
+    list-style: none;
+}
+
+#header .container .nav ul li a {
+    font-size: var(--p-font);
+    font-weight: 500;
+    border-bottom: solid var(--text-color) 1px transparent;
+    position: relative;
+    color: var(--text-color-alt);
+    transition: ease .3s;
+}
+
+#header .container .nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: var(--text-color);
+    bottom: -2px;
+    left: 0;
+    transition: all .5s ease;
+}
+
+#header .container .nav ul li a:hover,
+#header .container .nav ul li a:hover::after {
+    width: 100%;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+
+
+
+      /* HOME */
+
+#home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    grid-auto-rows: auto;
+}
+
+#home .info{
+    color: #fff;
+    display: grid;
+    gap: 10px;
+}
+
+#home .info h1 {
+    font-size: var(--big-font);
+    font-weight: bold;
+}
+
+#home .info h3 {
+    font-size: 23px;
+    margin: 10px;
+}
+
+#home .info p {
+    font-size: var(--p-font);
+    color: var(--text-color-alt);
+}
+
+#home .net-works {
+    margin: 2rem 0;
+}
+
+#home .net-works h4 {
+    font-size: var(--h4-font);
+    margin-bottom: 1rem;
+}
+
+.net-works a {
+    text-decoration: none;
+    margin: 0 10px;
+    border: solid 1.5px;
+    border-radius: 50%;
+    padding: 3px;
+    color: #ccc;
+    font-size: 2rem;
+    transition: .3s;
+}
+
+.net-works a:hover {
+    background-color: var(--text-color-alt);
+    color: var(--bg-color);
+}
+
+/* .net-works .bx {
+    font-size: 2rem;
+    color: var(--text-color-alt);
+    transition: all .5s;
+}
+.net-works .bx:hover {
+    color: var(--text-color);
+} */
+
+.img img {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+
+}
+
+    /* REDESIGN */
+
+
+#redesign .container {
+    width: 100%;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-template-rows: repeat(auto, 200px);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    grid-auto-rows: 200px;
+    grid-auto-flow: row dense;
+}
+
+#redesign .container .tile {
+    background-color: #242424;
+    display: grid;
+    align-items: end;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1d1d1d;
+    position: relative;
+    opacity: 1;
+    height: 100%;
+    overflow: hidden;
+    background-position: top;
+    background-size: cover;
+}
+
+#redesign .container .tile a {
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 15px 10px 15px 10px;
+    width: 100%;
+    color: var(--text-color);
+    text-decoration: none;
+    position: absolute;
+    transition: all .5s;
+    margin-bottom: -40%;
+
+    /* visibility: collapse; */
+    bottom: 0;
+}
+
+#redesign .container .tile a h3 {
+    font-size: 20px;
+}
+
+#redesign .container .tile a p {
+    color: var(--text-color-alt);
+}
+
+
+#redesign .container .tile:hover {
+    opacity: 0.9;
+
+}
+
+#redesign .container .tile:hover a{
+    margin-bottom: 0;
+}
+
+
+#redesign .container .tile-1 {
+    background-image: url(img/lightdarkmode.png);
+}
+
+
+#redesign .container .tile-2 {
+    background-image: url(img/photographer.png);
+}
+
+#redesign .container .tile-3 {
+    background-image: url(img/personal-website-1.png);
+}
+
+#redesign .container .tile-4 {
+    background-image: url(img/mihambugers.png);
+}
+
+
+
+
+
+
+
+
+        /* ABOUT */
+
+
+#about .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+
+
+/* #about .container .tile-1 {
+    background-image: url(img/profil.png);
+    background-position: top;
+    background-size: cover;
+    border-radius: 50%;
+
+    width: 250px;
+    height: 250px;
+    border: solid 1px;
+} */
+
+#about .container .tile {
+    background-color: #ccc;
+}
+
+#about .container .tile-1 {
+    height: 260px;
+    width: 60%;
+    background-image: url(img/img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about .container .tile-2 {
+    max-width: 260px;
+    min-width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-image: url(img/profil.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0b0b0b;
+}
+
+
+    /* FOOTER */
+
+#footer {
+    padding: 20px 10%;
+}
+
+#footer p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+
+@media screen  and (max-width: 970px) {
+    section {
+        padding: 10vh 6% 10vh;
+    }
+}
+
+/* @media screen  and (max-width: 880px) {
+
+  } */
+
+@media screen  and (max-width: 845px) {
+    #about .container .tile-1 {
+        width: 95%;
+    }
+
+    section {
+        min-height: 80vh;
+        padding: 10vh 5% 10vh;
+    }
+    
+   
+}
+
+
+@media screen  and (max-width: 830px) {
+    #home {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media screen  and (max-width: 650px) {
+
+    section {
+        padding: 10vh 4% 10vh;
+    }
+
+
+}

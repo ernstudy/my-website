@@ -1,0 +1,92 @@
+
+
+
+#portfolio .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-rows: repeat(auto, auto);
+    gap: 8rem 1rem;
+    margin-top: 2rem;
+    grid-auto-flow: row dense;
+    grid-auto-rows: auto;
+}
+
+#portfolio .container .posts {
+    display: grid;
+    gap: 1rem;
+}
+
+#portfolio .container .posts .photo{
+    background-color: #ccc;
+    height: 60vh;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px #ffffff;
+    transition: all .5s;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #fff;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#portfolio .container .posts .photo:hover {
+    transform: scale(1.01);
+    opacity: 1;
+}
+
+#portfolio .container .posts .title {
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+
+
+#portfolio .container .posts .title h3{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#portfolio .container .posts .title a {
+    text-decoration: none;
+    color: #ccc;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    transition: all .5s;
+}
+
+#portfolio .container .posts .title a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 5px #ccc;
+}
+
+
+
+
+
+
+
+
+
+#portfolio .container .post-1 .photo {
+    background-image: url(../web-portfolio/image/lightdark.png);
+}
+
+#portfolio .container .post-2 .photo {
+    background-image: url(image/photographer.png);
+}
+
+#portfolio .container .post-3 .photo {
+    background-image: url(/web-portfolio/image/personal-website-1.png);
+}
+
+#portfolio .container .post-4 .photo {
+    background-image: url(/web-portfolio/image/hambugers.png);
+}
+
