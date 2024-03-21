@@ -63,11 +63,10 @@ section p {
 }
 
 #header .logo {
-  width: 55px;
   margin-top: 10px;
 }
 #header .logo a img {
-  width: 100%;
+  width: 55px;
   border-radius: 5px;
 }
 
